@@ -35,7 +35,7 @@
         // シート「レイヤー0」
         default_layer {
             label = "QWRT";
-            bindings = 
+            bindings = <
 &kp Q            &kp W            &kp E     &kp R          &kp T                                        &kp Y     &kp U          &kp I      &kp O    &lt 5 P
 &mt LGUI A       &kp S            &kp D     &kp F          &kp G                                        &kp H     &kp J          &kp K      &kp L    &mt RGUI ENTER
 &mt LSHFT Z      &kp X            &kp C     &kp V          &kp B                                        &kp N     &kp M          &kp COMMA  &kp DOT  &mt RSHFT SLASH
@@ -46,7 +46,7 @@
         // シート「レイヤー1」（記号・矢印）
         number_layer {
             label = "NUM";
-            bindings = 
+            bindings = <
 &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                            &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR
 &kp MINUS  &kp TILDE  &kp UNDER  &kp LA(Y)  &trans                               &kp COLON  &kp SQT    &kp UP     &kp LBKT   &kp RBKT
 &kp EQUAL  &trans     &trans     &trans     &trans                               &kp SEMI   &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSLH
@@ -57,7 +57,7 @@
         // シート「レイヤー2」（テンキー・矢印）
         symbol_layer {
             label = "SYM";
-            bindings = 
+            bindings = <
 &kp LPAR   &kp N1     &kp N2     &kp N3     &kp RPAR                             &trans     &trans     &trans     &trans     &trans
 &kp PLUS   &kp N4     &kp N5     &kp N6     &kp ASTRK                            &trans     &trans     &kp UP     &trans     &trans
 &kp MINUS  &kp N7     &kp N8     &kp N9     &kp SLASH                            &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans
@@ -68,7 +68,7 @@
         // シート「レイヤー4」（Fキー・画面/音量・Bluetooth）
         function_layer {
             label = "FUN";
-            bindings = 
+            bindings = <
 &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                               &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP
 &kp F6     &kp F7     &kp F8     &kp F9     &kp F10                              &trans        &trans        &trans        &trans        &bootloader
 &kp F11    &kp F12    &kp F13    &kp F14    &kp F15                              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -79,7 +79,7 @@
         // トラックボールを動かしたときに自動で出るマウス用レイヤー（左右クリックのみ）
         mouse_layer {
             label = "MOUSE";
-            bindings = 
+            bindings = <
 &trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
 &trans     &trans     &trans     &trans     &trans                               &trans     &mkp LCLK  &mkp RCLK  &trans     &trans
 &trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
@@ -90,7 +90,7 @@
         // シート「レイヤー3」（押している間はトラックボールでスクロール）
         scroll_layer {
             label = "SCROLL";
-            bindings = 
+            bindings = <
 &kp C_SLEEP  &trans   &trans     &trans     &trans                               &trans         &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
 &trans       &trans   &trans     &trans     &kp LC(LEFT)                         &kp LC(RIGHT)  &mkp LCLK     &mkp RCLK   &trans         &trans
 &trans       &trans   &trans     &trans     &trans                               &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
@@ -100,7 +100,7 @@
 
         snipe_layer {
             label = "SNIPE";
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &bootloader                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
