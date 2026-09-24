@@ -76,14 +76,14 @@
             >;
         };
 
-        // シート「レイヤー3」（押している間はトラックボールでスクロール）
+        // 検査用
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp C_SLEEP    &trans   &trans   &trans           &trans                               &trans         &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&kp N1         &trans   &trans   &trans           &trans                               &trans         &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
 &trans         &trans   &trans   &trans           &kp LC(LEFT)                         &kp LC(RIGHT)  &mkp LCLK     &mkp RCLK   &trans         &trans
-&trans         &trans   &trans   &kp LG(LS(N4))   &kp LG(LS(N5))                       &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
-&kp GLOBE      &trans   &trans   &trans           &trans     &trans     &trans         &trans                                                  &bootloader
+&trans         &trans   &trans   &kp N2           &kp N3                               &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
+&kp N4         &trans   &trans   &trans           &trans     &trans     &trans         &trans                                                  &bootloader
             >;
         };
 
