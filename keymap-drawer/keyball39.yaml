@@ -201,9 +201,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SCROLL:
-  - SLEEP
+  - Ctl+Gui+Q
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mwh SCROLL_UP'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -212,9 +212,9 @@ layers:
   - Ctl+$$mdi:arrow-right-bold$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mwh SCROLL_LEFT'
+  - '&mwh SCROLL_DOWN'
+  - '&mwh SCROLL_RIGHT'
   - Ctl+$$mdi:arrow-left-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
   - $$mdi:mouse-left-click-outline$$
@@ -224,8 +224,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+Sft+4, s: Ctl+Sft+$}
+  - {t: Ctl+Sft+5, s: Ctl+Sft+%}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: 'Gui+[', s: 'Gui+{'}
   - Gui+R
