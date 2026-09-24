@@ -76,14 +76,14 @@
             >;
         };
 
-        // トラックボールを動かしたときに自動で出るマウス用レイヤー（左右クリックのみ）
-        mouse_layer {
-            label = "MOUSE";
+        // シート「レイヤー3」（押している間はトラックボールでスクロール）
+        scroll_layer {
+            label = "SCROLL";
             bindings = <
-&trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
-&trans     &trans     &trans     &trans     &trans                               &trans     &mkp LCLK  &mkp RCLK  &trans     &trans
-&trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
-&trans     &trans     &trans     &trans     &trans     &trans     &trans         &trans                                      &trans
+&kp LC(LG(Q))  &trans   &trans   &trans           &trans                               &trans         &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&trans         &trans   &trans   &trans           &kp LC(LEFT)                         &kp LC(RIGHT)  &mkp LCLK     &mkp RCLK   &trans         &trans
+&trans         &trans   &trans   &kp LC(LS(N4))   &kp LC(LS(N5))                       &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
+&kp GLOBE      &trans   &trans   &trans           &trans     &trans     &trans         &trans                                                  &bootloader
             >;
         };
 
