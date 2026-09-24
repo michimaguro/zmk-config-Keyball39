@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball39}
 layers:
   QWRT:
-  - Q
+  - {t: '1', s: '!'}
   - W
   - E
   - R
