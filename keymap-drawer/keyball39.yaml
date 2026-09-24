@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: SCROLL}
+  - {t: P, h: SNIPE}
   - {t: A, h: LGUI}
   - S
   - D
@@ -36,7 +36,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: LANG2, h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
-  - {t: '$$mdi:keyboard-tab$$', h: SCROLL}
+  - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: LANG1, h: NUM}
   - {t: '$$mdi:keyboard-esc$$', h: SYM}
@@ -163,18 +163,18 @@ layers:
   SCROLL:
   - Ctl+Gui+Q
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mwh SCROLL_UP'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-left-bold$$
   - Ctl+$$mdi:arrow-up-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mwh SCROLL_LEFT'
-  - '&mwh SCROLL_DOWN'
-  - '&mwh SCROLL_RIGHT'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-left-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
   - $$mdi:mouse-left-click-outline$$
@@ -191,12 +191,12 @@ layers:
   - Gui+R
   - {t: 'Gui+]', s: 'Gui+}'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
+  - GLOBE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
@@ -210,6 +210,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -235,8 +236,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
