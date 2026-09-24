@@ -87,17 +87,6 @@
             >;
         };
 
-        // シート「レイヤー3」（押している間はトラックボールでスクロール）
-        scroll_layer {
-            label = "SCROLL";
-            bindings = <
-&kp LC(LG(Q))  &trans           &mwh SCROLL_UP    &trans             &trans                               &trans         &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&trans         &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_RIGHT  &kp LC(LEFT)                         &kp LC(RIGHT)  &mkp LCLK     &mkp RCLK   &trans         &trans
-&trans         &trans           &trans            &kp LC(LS(N4))     &kp LC(LS(N5))                       &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
-&bootloader    &trans           &trans            &trans             &trans     &trans     &trans         &trans                                                  &bootloader
-            >;
-        };
-
         snipe_layer {
             label = "SNIPE";
             bindings = <
