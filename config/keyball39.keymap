@@ -79,11 +79,11 @@
         // シート「レイヤー4」（画面操作関連）
         scroll_layer {
             label = "SCROLL";
-            bindings = <
-&kp LG(LC(Q))  &trans   &kp LG(LBKT) &kp LG(RBKT) &trans                               &trans         &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&trans         &trans   &trans   &trans           &kp LC(LEFT)                         &kp LC(RIGHT)  &mkp LCLK     &mkp RCLK   &trans         &trans
-&kp LCTRL      &trans   &trans   &kp LG(LS(N4))   &kp LG(LS(N5))                       &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
-&kp LC(LG(SPACE))  &trans   &trans   &kp LG(LS(N4))   &kp LG(LS(N5))                   &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans      &trans   &trans   &trans           &trans     &trans     &trans         &trans                                                  &bootloader
+            bindings = 
+&kp LG(LC(Q))      &trans   &kp LG(LBKT)  &kp LG(RBKT)     &trans                               &trans         &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&trans             &trans   &trans        &trans           &kp LC(LEFT)                         &kp LC(RIGHT)  &mkp LCLK     &mkp RCLK   &trans         &trans
+&kp LCTRL          &trans   &trans        &kp LG(LS(N4))   &kp LG(LS(N5))                       &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
+&kp LC(LG(SPACE))  &trans   &bootloader   &trans           &trans     &trans     &trans         &trans                                                  &bootloader
             >;
         };
 
