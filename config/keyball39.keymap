@@ -76,6 +76,17 @@
             >;
         };
 
+        // ボールを動かすと自動で出るレイヤー（番号4）
+        mouse_layer {
+            label = "MOUSE";
+            bindings = <
+&trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
+&trans     &trans     &trans     &trans     &trans                               &trans     &mkp LCLK  &mkp RCLK  &trans     &trans
+&trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans     &trans         &trans                                      &trans
+            >;
+        };
+
         // 検査用
         scroll_layer {
             label = "SCROLL";
