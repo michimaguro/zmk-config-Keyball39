@@ -178,7 +178,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -201,7 +201,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SCROLL:
-  - {t: '1', s: '!'}
+  - Gui+Ctl+Q
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -224,14 +224,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - {t: Gui+Sft+4, s: Gui+Sft+$}
+  - {t: Gui+Sft+5, s: Gui+Sft+%}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: 'Gui+[', s: 'Gui+{'}
   - Gui+R
   - {t: 'Gui+]', s: 'Gui+}'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '4', s: $}
+  - GLOBE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
