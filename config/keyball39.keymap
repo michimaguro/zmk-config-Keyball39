@@ -2,8 +2,8 @@
 #define NUM     1
 #define SYM     2
 #define FUN     3
-#define MOUSE   4
-#define SCROLL  5
+#define SCROL   4
+#define MOUSE   5
 #define SNIPE   6
 
 #include <behaviors/mouse_keys.dtsi>
@@ -65,7 +65,7 @@
             >;
         };
 
-        // シート「レイヤー4」（Fキー・画面/音量・Bluetooth）
+        // シート「レイヤー3」（Fキー・画面/音量・Bluetooth）
         function_layer {
             label = "FUN";
             bindings = <
@@ -76,18 +76,7 @@
             >;
         };
 
-        // ボールを動かすと自動で出るレイヤー（番号4）
-        mouse_layer {
-            label = "MOUSE";
-            bindings = <
-&trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
-&trans     &trans     &trans     &trans     &trans                               &trans     &mkp LCLK  &trans     &trans     &trans
-&trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
-&trans     &trans     &trans     &trans     &trans     &trans     &trans         &trans                                      &trans
-            >;
-        };
-
-        // シート「レイヤー3」（押している間はトラックボールでスクロール）
+        // シート「レイヤー4」（画面操作関連）
         scroll_layer {
             label = "SCROLL";
             bindings = <
@@ -95,6 +84,17 @@
 &trans         &trans   &trans   &trans           &kp LC(LEFT)                         &kp LC(RIGHT)  &mkp LCLK     &mkp RCLK   &trans         &trans
 &kp LCTRL      &trans   &trans   &kp LG(LS(N4))   &kp LG(LS(N5))                       &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
 &kp LC(LG(SPACE))  &trans   &trans   &kp LG(LS(N4))   &kp LG(LS(N5))                   &trans         &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans      &trans   &trans   &trans           &trans     &trans     &trans         &trans                                                  &bootloader
+            >;
+        };
+
+        // シート「レイヤー5」（トラックボールを動かした直後）
+        mouse_layer {
+            label = "MOUSE";
+            bindings = <
+&trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
+&trans     &trans     &trans     &trans     &trans                               &trans     &mkp LCLK  &trans     &trans     &trans
+&trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans     &trans         &trans                                      &trans
             >;
         };
 
