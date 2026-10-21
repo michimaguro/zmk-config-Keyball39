@@ -48,7 +48,7 @@
             label = "NUM";
             bindings = <
 &kp EXCL   &kp AT          &kp HASH   &kp DLLR   &kp PRCNT                            &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR
-&kp MINUS  &kp LS(GRAVE)   &kp UNDER  &kp LA(Y)  &trans                               &kp COLON  &kp SQT    &kp UP     &kp LBKT   &kp RBKT
+&kp MINUS  &kp GRAVE       &kp UNDER  &kp LA(Y)  &trans                               &kp COLON  &kp SQT    &kp UP     &kp LBKT   &kp RBKT
 &kp EQUAL  &trans          &trans     &trans     &trans                               &kp SEMI   &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSLH
 &trans     &trans          &trans     &trans     &trans     &trans     &trans         &trans                                      &trans
             >;
