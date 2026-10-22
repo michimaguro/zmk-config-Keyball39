@@ -52,7 +52,7 @@ layers:
   - (
   - )
   - {t: '-', s: _}
-  - {t: '`', s: '~'}
+  - '~'
   - _
   - Alt+Y
   - {t: '$$mdi:transfer$$', type: trans}
