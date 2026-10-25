@@ -15,7 +15,7 @@
 &nice_view_spi { cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; };
 
 &lt {
-    tapping-term-ms = <300>;
+    tapping-term-ms = <240>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
@@ -29,6 +29,19 @@
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
+    behaviors {
+        lt_slow: layer_tap_slow {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&mo>, <&kp>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -39,7 +52,7 @@
 &kp Q            &kp W       &kp E     &kp R          &kp T                                        &kp Y     &kp U          &kp I      &kp O    &lt 4 P
 &mt LGUI A       &kp S       &kp D     &kp F          &kp G                                        &kp H     &kp J          &kp K      &kp L    &mt RGUI ENTER
 &mt LSHFT Z      &kp X       &kp C     &kp V          &kp B                                        &kp N     &kp M          &kp COMMA  &kp DOT  &mt RSHFT SLASH
-&lt 3 MINUS      &kp LCTRL   &kp LALT  &lt 1 LANG2    &lt 2 SPACE    &lt 4 TAB       &lt 3 BSPC    &lt 1 LANG1                                  &lt 2 ESC
+&lt_slow 3 MINUS &kp LCTRL   &kp LALT  &lt 1 LANG2    &lt 2 SPACE    &lt 4 TAB       &lt 3 BSPC    &lt 1 LANG1                                  &lt 2 ESC
             >;
         };
 
