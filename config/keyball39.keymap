@@ -15,7 +15,7 @@
 &nice_view_spi { cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; };
 
 &lt {
-    tapping-term-ms = <240>;
+    tapping-term-ms = <300>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
@@ -39,7 +39,7 @@
 &kp Q            &kp W       &kp E     &kp R          &kp T                                        &kp Y     &kp U          &kp I      &kp O    &lt 4 P
 &mt LGUI A       &kp S       &kp D     &kp F          &kp G                                        &kp H     &kp J          &kp K      &kp L    &mt RGUI ENTER
 &mt LSHFT Z      &kp X       &kp C     &kp V          &kp B                                        &kp N     &kp M          &kp COMMA  &kp DOT  &mt RSHFT SLASH
-&lt 3 MINUS      &kp LCTRL   &kp LALT  &lt 1 LANG2    &lt 2 SPACE    &lt 4 TAB       &kp BSPC      &lt 1 LANG1                                  &lt 2 ESC
+&lt 3 MINUS      &kp LCTRL   &kp LALT  &lt 1 LANG2    &lt 2 SPACE    &lt 4 TAB       &lt 3 BSPC    &lt 1 LANG1                                  &lt 2 ESC
             >;
         };
 
@@ -47,10 +47,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&kp EXCL   &kp AT          &kp HASH   &kp DLLR   &kp PRCNT                            &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR
-&kp MINUS  &kp TILDE       &kp UNDER  &kp LA(Y)  &trans                               &kp COLON  &kp SQT    &kp UP     &kp LBKT   &kp RBKT
-&kp EQUAL  &trans          &trans     &trans     &trans                               &kp SEMI   &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSLH
-&trans     &trans          &trans     &trans     &trans     &trans     &trans         &trans                                      &trans
+&kp EXCL   &kp AT      &kp HASH   &kp DLLR   &kp PRCNT                            &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR
+&kp MINUS  &kp TILDE   &kp UNDER  &kp LA(Y)  &trans                               &kp COLON  &kp SQT    &kp UP     &kp LBKT   &kp RBKT
+&kp EQUAL  &trans      &trans     &trans     &trans                               &kp SEMI   &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSLH
+&trans     &trans      &trans     &trans     &trans     &trans     &trans         &trans                                      &trans
             >;
         };
 
@@ -80,10 +80,10 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LG(LC(Q))      &trans   &kp LG(LBKT)     &kp LG(RBKT)     &trans                                   &trans            &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&trans             &trans   &kp LC(LS(TAB))  &kp LC(TAB)      &kp LC(LEFT)                             &kp LC(RIGHT)     &mkp LCLK     &mkp RCLK   &trans         &trans
-&kp LCTRL          &trans   &trans           &kp LG(LS(N4))   &kp LG(LS(N5))                           &kp LC(LS(TAB))   &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &kp LC(TAB)
-&kp LC(LG(SPACE))  &trans   &bootloader      &trans           &trans     &trans     &trans             &trans                                                     &bootloader
+&kp LG(LC(Q))      &trans   &kp LC(LEFT)     &kp LC(RIGHT)  &trans                               &trans   &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&trans             &trans   &kp LC(LS(TAB))  &kp LC(TAB)    &kp LG(LS(N4))                       &trans   &mkp LCLK     &mkp RCLK   &trans         &trans
+&kp LCTRL          &trans   &kp LG(LBKT)     &kp LG(RBKT)   &kp LG(LS(N5))                       &trans   &kp LG(LBKT)  &kp LG(R)   &kp LG(RBKT)   &trans
+&kp LC(LG(SPACE))  &trans   &bootloader      &trans         &trans     &trans     &trans         &trans                                            &bootloader
             >;
         };
 
