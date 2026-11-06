@@ -176,7 +176,7 @@ layers:
   - Ctl+Sft+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
   - {t: Gui+Sft+4, s: Gui+Sft+$}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui++
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -186,7 +186,7 @@ layers:
   - {t: 'Gui+[', s: 'Gui+{'}
   - {t: 'Gui+]', s: 'Gui+}'}
   - {t: Gui+Sft+5, s: Gui+Sft+%}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gui+-, s: Gui+_}
   - {t: 'Gui+[', s: 'Gui+{'}
   - Gui+R
   - {t: 'Gui+]', s: 'Gui+}'}
